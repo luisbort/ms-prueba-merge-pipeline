@@ -4,7 +4,13 @@ metadata:
   name: ms-prueba-merge-pipeline
   title: Microservicio de Prueba para Merge Pipeline
   description: Un microservicio de ejemplo para demostrar el uso de merge pipelines en Backstage
+  annotations:
+    github.com/project-slug: tu-org/usuarios-ms
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/kubernetes-id: usuarios-ms
 spec:
   type: service
   owner: luisbort
   lifecycle: production
+  providesApis:
+    - usuarios-api
